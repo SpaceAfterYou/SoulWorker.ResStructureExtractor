@@ -1,0 +1,39 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Publish
+      run: dotnet publish --configuration Release
+      
+    - name: Test
+      run: dotnet test
+      
+    #- name: Generate release tag
+    #  id: tag
+    #  run: echo "::set-output name=release_tag::SoulWorker_ResStructureExtractor_$(date +"%Y.%m.%d_%H-%M")"
+      
+    #- name: Zip
+    #  run: tar -cvf ${{ steps.tag.outputs.release_tag }}.zip -C SoulWorker.ResStructureExtractor.Cli/bin/Release/net6.0/publish/ *
+      
+    #- name: Release
+    #  uses: softprops/action-gh-release@v1
+    #  with:
+    #    tag_name: ${{ steps.tag.outputs.release_tag }}
+    #    files: ${{ steps.tag.outputs.release_tag }}.zip
