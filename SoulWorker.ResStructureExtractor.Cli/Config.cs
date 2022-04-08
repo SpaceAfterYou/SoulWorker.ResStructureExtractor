@@ -5,8 +5,7 @@ public sealed class Config
     #region Properties
 
     public string Path { get; } = string.Empty;
-    public string File { get; } = string.Empty;
-    public bool Json { get; } = false;
+    public string? File { get; }
 
     #endregion
 
@@ -19,12 +18,6 @@ public sealed class Config
             if (args[q] == "-path")
             {
                 Path = args[++q];
-                continue;
-            }
-
-            if (args[q] == "-json")
-            {
-                Json = true;
                 continue;
             }
 
