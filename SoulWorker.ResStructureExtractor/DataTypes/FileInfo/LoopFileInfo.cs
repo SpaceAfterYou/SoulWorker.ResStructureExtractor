@@ -1,26 +1,22 @@
 ﻿using SoulWorker.ResStructureExtractor.DataTypes.MemoryInfo;
-using System.Diagnostics;
 
 namespace SoulWorker.ResStructureExtractor.DataTypes.FileInfo;
 
-internal readonly struct NameUsageFileInfo
+internal readonly struct LoopFileInfo
 {
     #region Fields
 
     internal NameMemoryInfo Name { get; }
-    internal int Offset { get; }
-    internal bool IsValidOffset => Offset != 0;
+    internal Range Range { get; }
 
     #endregion Fields
 
     #region Constructors
 
-    internal NameUsageFileInfo(NameMemoryInfo name, int offset)
+    internal LoopFileInfo(NameMemoryInfo name, Range range)
     {
         Name = name;
-        Offset = offset;
-
-        Debug.WriteLineIf(!IsValidOffset, $"{Name.Value} not found");
+        Range = range;
     }
 
     #endregion Constructors
