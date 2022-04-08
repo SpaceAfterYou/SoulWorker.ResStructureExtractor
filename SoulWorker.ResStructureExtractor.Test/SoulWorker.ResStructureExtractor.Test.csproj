@@ -9,6 +9,16 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Remove="Data\SoulWorker_dump.exe" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Data\SoulWorker_dump.exe">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0-preview-20220401-08" />
 		<PackageReference Include="MSTest.TestAdapter" Version="2.2.9" />
 		<PackageReference Include="MSTest.TestFramework" Version="2.2.9" />
@@ -20,10 +30,6 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\SoulWorker.ResStructureExtractor\SoulWorker.ResStructureExtractor.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Data\" />
 	</ItemGroup>
 
 </Project>
