@@ -88,7 +88,10 @@ internal static class TableNameUtils
         new byte[] { 0x74, 0x62, 0x5F },
         
         // 54 62 5F - "Tb_"
-        new byte[] { 0x54, 0x62, 0x5F }
+        new byte[] { 0x54, 0x62, 0x5F },
+        
+        // 54 42 5F - "TB_"
+        new byte[] { 0x54, 0x42, 0x5F }
     };
 
     #endregion Private Static Fields
