@@ -14,6 +14,7 @@ internal sealed class Extractor
             .All(_memory)
             .Select(v => new NameMemoryInfo(v.Name, _headers.AddressFrom(v.Offset)))
             .Select(v => new NameUsageFileInfo(v, TableNameUtils.UsageOffset(_memory, v.Address)))
+            .Where(v => v.IsValidOffset)
             .Select(v => new LoopFileInfo(v.Name, TableBodyUtils.BodyFrom(_memory, v.Offset)))
             .Select(v => new TableFunctionFileInfo(v.Name, TableBodyUtils.FunctionsFrom(_memory, v.Range)))
             .ToArray();
