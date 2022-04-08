@@ -8,13 +8,13 @@
 | argument       | value                         | necessarily |
 | -------------- | ----------------------------- | ----------- |
 | -path          | path to DUMPED SoulWorker.exe |      +      |
-| -json          | return result in JSON format  |      -      |
-| -file out.json | write result into the file    |      -      |
+| -file out.json | write result into the file*   |      -      |
+
+* If argument not provided - result printed to stdout
 
 ## 💪 Tested
 
 - On global version
-- On japanese version
 - With corrupted exe
 
 ## [😎 Well cum 👌 to discord](http://discord.gg/SequFJP)
