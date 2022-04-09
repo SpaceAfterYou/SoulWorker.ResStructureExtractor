@@ -8,22 +8,31 @@ namespace SoulWorker.ResStructureExtractor;
 
 internal sealed class Extractor
 {
-    public Dictionary<string, string[]> FromUnpacked()
+    public async ValueTask<Dictionary<string, string[]>> FromUnpacked()
     {
-        var tablesInfos = TableNameUtils
-            .All(_memory)
-            .Select(v => new NameMemoryInfo(v.Name, _headers.AddressFrom(v.Offset)))
-            .Select(v => new NameUsageFileInfo(v, TableNameUtils.UsageOffset(_memory, v.Address)))
+        var names = await Task
+            .WhenAll(TableNameUtils.All(_memory));
+        
+        var namesInfos = await Task
+            .WhenAll(names.Select(async v => new NameMemoryInfo(v.Name, await _headers.AddressFrom(v.Offset))));
+        
+        var namesUsages = await Task
+            .WhenAll(namesInfos.Select(async v => new NameUsageFileInfo(v, await TableNameUtils.UsageOffset(_memory, v.Address))));
+
+        var bodies = await Task.WhenAll(namesUsages
             .Where(v => v.IsValidOffset)
-            .Select(v => new LoopFileInfo(v.Name, TableBodyUtils.BodyFrom(_memory, v.Offset)))
+            .Select(async v => new LoopFileInfo(v.Name, await TableBodyUtils.BodyFrom(_memory, v.Offset))));
+
+        var tablesInfos = bodies
             .Select(v => new TableFunctionFileInfo(v.Name, TableBodyUtils.FunctionsFrom(_memory, v.Range)))
             .ToArray();
 
-        var addressesInfos = tablesInfos
+        var addresses = await Task.WhenAll(tablesInfos
             .SelectMany(v => v.ReadFunctions.Select(v => v.Offset))
             .Distinct()
-            .Select(v => new { Offset = v, RowTypeName = _headers.AddressFrom(v).ToString() })
-            .ToDictionary(k => k.Offset, v => v.RowTypeName);
+            .Select(async v => new { Offset = v, RowTypeName = $"{await _headers.AddressFrom(v):X}".ToString() }));
+
+        var addressesInfos = addresses.ToDictionary(k => k.Offset, v => v.RowTypeName);
 
         return tablesInfos
             .Select(v => new { v.Name, Types = v.ReadFunctions.Select(v => addressesInfos[v.Offset]).ToArray() })

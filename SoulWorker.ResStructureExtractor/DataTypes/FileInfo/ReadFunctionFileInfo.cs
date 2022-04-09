@@ -1,4 +1,6 @@
-﻿namespace SoulWorker.ResStructureExtractor.DataTypes.FileInfo;
+﻿using SoulWorker.ResStructureExtractor.Utils;
+
+namespace SoulWorker.ResStructureExtractor.DataTypes.FileInfo;
 
 internal readonly struct TableReadFunctionFileInfo
 {
@@ -11,8 +13,7 @@ internal readonly struct TableReadFunctionFileInfo
     /// </summary>
     internal int CallOffset { get; }
 
-    // 0x5 - skip CALL instruction (E8 XX XX XX XX)
-    internal int Offset => FileOffset + CallOffset + 0x5;
+    internal int Offset => AsmUtils.OffsetFromCalc(FileOffset, CallOffset);
 
     #endregion Fields
 

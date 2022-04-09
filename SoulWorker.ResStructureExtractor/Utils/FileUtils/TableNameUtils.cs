@@ -7,11 +7,11 @@ internal static class TableNameUtils
 {
     #region Methods
 
-    internal static int UsageOffset(ReadOnlyMemory<byte> buffer, int address)
+    internal static ValueTask<int> UsageOffset(ReadOnlyMemory<byte> buffer, int address)
     {
         var bytes = BitConverter.GetBytes(address);
 
-        return Enumerable
+        return ValueTask.FromResult(Enumerable
             .Range(0, buffer.Length - 7)
             .FirstOrDefault(v =>
             {
@@ -38,11 +38,11 @@ internal static class TableNameUtils
                 if (bnn != 0x95) return false;
 
                 return true;
-            }, 0);
+            }, 0));
     }
 
 
-    internal static IEnumerable<NameFileInfo> All(ReadOnlyMemory<byte> buffer)
+    internal static IEnumerable<Task<NameFileInfo>> All(ReadOnlyMemory<byte> buffer)
     {
         for (int begin = 0; begin < buffer.Length; ++begin)
         {
@@ -63,7 +63,7 @@ internal static class TableNameUtils
                 if (b != EndOfString) break;
 
                 var name = Encoding.ASCII.GetString(span[..end]);
-                yield return new NameFileInfo(name, begin);
+                yield return Task.FromResult(new NameFileInfo(name, begin));
 
                 begin += end;
                 break;
@@ -82,7 +82,7 @@ internal static class TableNameUtils
 
     #region Private Static Fields
 
-    private static readonly IReadOnlyList<ReadOnlyMemory<byte>> _tableStartNameVariants = new List<ReadOnlyMemory<byte>>
+    private static readonly IReadOnlyList<ReadOnlyMemory<byte>> _tableStartNameVariants = new ReadOnlyMemory<byte>[]
     {
         // 74 62 5F - "tb_"
         new byte[] { 0x74, 0x62, 0x5F },

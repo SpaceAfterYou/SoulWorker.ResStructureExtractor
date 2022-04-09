@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Threading.Tasks;
 
 namespace SoulWorker.ResStructureExtractor.Test;
 
@@ -6,9 +7,9 @@ namespace SoulWorker.ResStructureExtractor.Test;
 public sealed class TestExtract
 {
     [TestMethod]
-    public void FromUnpackedTest()
+    public async Task FromUnpackedTest()
     {
-        var results = Extract.FromUnpacked(@"Data\SoulWorker_dump.exe");
+        var results = await Extract.FromUnpacked(@"Data\SoulWorker_dump.exe");
         
         Assert.IsTrue(results.ContainsKey("tb_Achievement"));
         Assert.IsTrue(results.ContainsKey("tb_Achievement_begin"));

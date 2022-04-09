@@ -2,6 +2,7 @@
 
 public static class Extract
 {
-    public static Dictionary<string, string[]> FromUnpacked(string path) => 
-        new Extractor(path).FromUnpacked();
+    public static ValueTask<Dictionary<string, string[]>> FromUnpacked(string path) => new Extractor(path)
+        .FromUnpacked();
+        
 }

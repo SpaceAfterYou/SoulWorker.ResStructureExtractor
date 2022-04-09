@@ -22,3 +22,23 @@ internal readonly struct TableFunctionFileInfo
 
     #endregion Constructors
 }
+
+internal readonly struct TableFunctionMemoryInfo
+{
+    #region Fields
+
+    internal NameMemoryInfo Name { get; }
+    internal IReadOnlyList<TableReadFunctionFileInfo> ReadFunctions { get; }
+
+    #endregion Fields
+
+    #region Constructors
+
+    internal TableFunctionMemoryInfo(NameMemoryInfo name, IEnumerable<TableReadFunctionFileInfo> readFunctions)
+    {
+        Name = name;
+        ReadFunctions = readFunctions.ToArray();
+    }
+
+    #endregion Constructors
+}

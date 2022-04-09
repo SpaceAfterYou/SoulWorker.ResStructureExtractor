@@ -5,26 +5,24 @@ namespace SoulWorker.ResStructureExtractor.Extensions;
 
 internal static class PEHeadersExtension
 {
-    internal static int OffsetFromAddress(this PEHeaders headers, int address)
+    internal static ValueTask<int> OffsetFrom(this PEHeaders headers, int address)
     {
         var header = headers.PEHeader;
         if (header is null) throw new ApplicationException("Header not found");
 
         var section = headers.SectionHeaders.FirstOrDefault(v => IsValidSection(v, (int)header.ImageBase, address));
-        if (section.Name is null)
-        {
-            Debug.WriteLine("Section not found");
-            return -1;
-        }
+        
+        Debug.WriteLineIf(section.Name is null, "Section not found");
+        if (section.Name is null) return ValueTask.FromResult(-1);
 
         var offset = address - ((int)header.ImageBase + section.VirtualAddress) + section.PointerToRawData;
 
         Debug.WriteLine($"Offset: {offset:X} from address {address:X}");
 
-        return offset;
+        return ValueTask.FromResult(offset);
     }
 
-    internal static int AddressFrom(this PEHeaders headers, int offset)
+    internal static ValueTask<int> AddressFrom(this PEHeaders headers, int offset)
     {
         var header = headers.PEHeader;
         if (header is null) throw new ApplicationException("Header not found");
@@ -36,7 +34,7 @@ internal static class PEHeadersExtension
 
         Debug.WriteLine($"Address: {address:X} from offset {offset:X}");
 
-        return address;
+        return ValueTask.FromResult(address);
     }
 
     #region Private Static Methods
