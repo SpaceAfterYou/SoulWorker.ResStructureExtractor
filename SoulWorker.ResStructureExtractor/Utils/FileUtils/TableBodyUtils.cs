@@ -6,37 +6,44 @@ internal static class TableBodyUtils
 {
     #region Methods
 
-    internal static ValueTask<Range> BodyFrom(ReadOnlyMemory<byte> memory, int offset)
+    internal static bool StartsWith(ReadOnlyMemory<byte> memory, ReadOnlyMemory<byte?> pattern)
+    {
+        for (int i = 0; i < pattern.Length; i++)
+        {
+            var b = pattern.Span[i];
+            if (b is null) continue;
+
+            if (memory.Span[i] != b) return false;
+        }
+
+        return true;
+    }
+
+    internal static bool ContainsPattern(ReadOnlyMemory<byte> memory, ReadOnlyMemory<byte?> pattern) => Enumerable
+        .Range(0, memory.Length - pattern.Length)
+        .Any(v => StartsWith(memory[v..], pattern));
+
+    internal static ValueTask<int> OffsetByPatternAsync(ReadOnlyMemory<byte> memory, ReadOnlyMemory<byte?> pattern) => ValueTask.FromResult(Enumerable
+        .Range(0, memory.Length - pattern.Length)
+        .First(v => StartsWith(memory[v..], pattern)));
+
+    internal static async ValueTask<Range> BodyFrom(ReadOnlyMemory<byte> memory, int offset)
     {
         var mem = memory[offset..];
 
-        var begin = Enumerable
+        var begin = offset + Enumerable
             .Range(0, mem.Length)
             .First(v => mem[v..].Span.StartsWith(_beginBlock.Span));
 
-        var end = Enumerable
-            .Range(begin, mem.Length - begin)
-            .First(v =>
-            {
-                var m = mem[v..];
-                for (int i = 0; i < _endBlock.Length; i++)
-                {
-                    var b = _endBlock.Span[i];
-                    if (b is null) continue;
+        var end = await OffsetByPatternAsync(memory[begin..], _endBlock);
 
-                    if (m.Span[i] != b) return false;
-                }
-
-                return true;
-            });
-
-        return ValueTask.FromResult(new Range(offset + begin, offset + end));
+        return new Range(begin, begin + end);
     }
 
     internal static IEnumerable<TableReadFunctionFileInfo> FunctionsFrom(ReadOnlyMemory<byte> memory, Range range)
     {
         var mem = memory[range];
-
+        
         return Enumerable
             .Range(0, mem.Length)
             .Where(v => mem[v..].Span.StartsWith(_pattern.Span))
@@ -74,7 +81,7 @@ internal static class TableBodyUtils
 
     #region Private Fields
 
-    private readonly static IReadOnlyList<ReadOnlyMemory<byte>> _functionPattern = new ReadOnlyMemory<byte>[]
+    private readonly static IReadOnlyCollection<ReadOnlyMemory<byte>> _functionPattern = new ReadOnlyMemory<byte>[]
     {
         // string
         // push    ebp

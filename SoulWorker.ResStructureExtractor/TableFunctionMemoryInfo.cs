@@ -3,7 +3,7 @@ using SoulWorker.ResStructureExtractor.DataTypes.MemoryInfo;
 
 namespace SoulWorker.ResStructureExtractor;
 
-internal readonly struct TableFunctionFileInfo
+internal readonly struct TableFunctionMemoryInfo
 {
     #region Fields
 
@@ -14,7 +14,7 @@ internal readonly struct TableFunctionFileInfo
 
     #region Constructors
 
-    internal TableFunctionFileInfo(NameMemoryInfo name, IEnumerable<TableReadFunctionFileInfo> readFunctions)
+    internal TableFunctionMemoryInfo(NameMemoryInfo name, IEnumerable<TableReadFunctionFileInfo> readFunctions)
     {
         Name = name;
         ReadFunctions = readFunctions.ToArray();

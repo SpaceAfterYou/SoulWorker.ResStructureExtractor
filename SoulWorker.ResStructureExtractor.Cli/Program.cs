@@ -2,8 +2,6 @@
 using SoulWorker.ResStructureExtractor.Cli;
 using System.Text.Json;
 
-args = new string[] { "-path", @"C:\Program Files (x86)\Steam\steamapps\common\Soulworker_TWN\SoulWorker_dump.exe" };
-
 var config = new Config(args);
 var results = await Extract.FromUnpacked(config.Path);
 
