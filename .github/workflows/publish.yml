@@ -29,7 +29,7 @@ jobs:
       run: dotnet publish --configuration Release
       
     - name: Test
-      run: dotnet test
+      run: dotnet test --configuration Release
       
     - name: Zip
       run: tar -cvf SoulWorker_ResStructureExtractor_${{ env.VERSION }}.zip -C SoulWorker.ResStructureExtractor.Cli/bin/Release/net7.0/publish/ *
