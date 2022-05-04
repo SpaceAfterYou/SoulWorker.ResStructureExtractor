@@ -1,4 +1,4 @@
-# ☠️ Resource Table Structure Extractor (WORK IN PROGRESS)
+# ☠️ Resource Table Structure Extractor
 
 ## 👀 How to
 
