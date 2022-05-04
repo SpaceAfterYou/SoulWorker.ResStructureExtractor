@@ -4,9 +4,11 @@ on:
   push:
     branches: [ main ]
 
+env:
+    VERSION: 1.0.${{ github.run_attempt }}-${{ github.run_number }}
+
 jobs:
   build:
-
     runs-on: windows-latest
 
     steps:
@@ -17,7 +19,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v2
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 7.0.x
         
     - name: Restore dependencies
       run: dotnet restore
@@ -28,15 +30,12 @@ jobs:
     - name: Test
       run: dotnet test
       
-    #- name: Generate release tag
-    #  id: tag
-    #  run: echo "::set-output name=release_tag::SoulWorker_ResStructureExtractor_$(date +"%Y.%m.%d_%H-%M")"
+    - name: Zip
+      run: tar -cvf SoulWorker_ResStructureExtractor_${{ env.VERSION }}.zip -C SoulWorker.ResStructureExtractor.Cli/bin/Release/net7.0/publish/ *
       
-    #- name: Zip
-    #  run: tar -cvf ${{ steps.tag.outputs.release_tag }}.zip -C SoulWorker.ResStructureExtractor.Cli/bin/Release/net6.0/publish/ *
-      
-    #- name: Release
-    #  uses: softprops/action-gh-release@v1
-    #  with:
-    #    tag_name: ${{ steps.tag.outputs.release_tag }}
-    #    files: ${{ steps.tag.outputs.release_tag }}.zip
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: SoulWorker_ResStructureExtractor_${{ env.VERSION }}.zip
+        tag_name: ${{ env.VERSION }}
+        generate_release_notes: true
