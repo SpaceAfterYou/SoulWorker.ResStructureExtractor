@@ -17,6 +17,13 @@
 - On global version
 - With corrupted exe
 
+## 👀 Result example
+
+> result without `-file` argument
+
+![image](https://user-images.githubusercontent.com/10461884/166984497-46ec9c60-0e57-403b-b5ba-be3a22465840.png)
+
+
 ## [😎 Well cum 👌 to discord](http://discord.gg/SequFJP)
 
 [![Discord](https://img.shields.io/discord/606442027873206292?style=for-the-badge)](http://discord.gg/SequFJP)
