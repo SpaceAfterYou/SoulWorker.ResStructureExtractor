@@ -9,13 +9,1269 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Remove="Data\SoulWorker_dump.exe" />
+		<None Remove="Data\Res\tb_Achievement_begin.res" />
+		<None Remove="Data\Res\tb_Achievement_Emblem.res" />
+		<None Remove="Data\Res\tb_Achievement_Script_ENG.res" />
+		<None Remove="Data\Res\tb_Achievement_Script_TWN.res" />
+		<None Remove="Data\Res\tb_Achievement_Script.res" />
+		<None Remove="Data\Res\tb_Achievement.res" />
+		<None Remove="Data\Res\tb_Akashic_Combination.res" />
+		<None Remove="Data\Res\tb_Akashic_Disassemble.res" />
+		<None Remove="Data\Res\tb_Akashic_Make.res" />
+		<None Remove="Data\Res\tb_Akashic_Parts.res" />
+		<None Remove="Data\Res\tb_Akashic_Records.res" />
+		<None Remove="Data\Res\tb_Akashic_Slot_Extend.res" />
+		<None Remove="Data\Res\tb_Appearance.res" />
+		<None Remove="Data\Res\tb_ApplyChallenge.res" />
+		<None Remove="Data\Res\tb_Aura.res" />
+		<None Remove="Data\Res\tb_Bank_Slot_Extend.res" />
+		<None Remove="Data\Res\tb_Battle_Arena_Info.res" />
+		<None Remove="Data\Res\tb_Booster_Script_ENG.res" />
+		<None Remove="Data\Res\tb_Booster_Script_TWN.res" />
+		<None Remove="Data\Res\tb_Booster_Script.res" />
+		<None Remove="Data\Res\tb_Booster.res" />
+		<None Remove="Data\Res\Tb_Broach_set_book.res" />
+		<None Remove="Data\Res\Tb_Broach_Set.res" />
+		<None Remove="Data\Res\tb_broach_Simulator.res" />
+		<None Remove="Data\Res\TB_BroachData.res" />
+		<None Remove="Data\Res\tb_Buff_Script_ENG.res" />
+		<None Remove="Data\Res\tb_Buff_Script_TWN.res" />
+		<None Remove="Data\Res\tb_Buff_Script.res" />
+		<None Remove="Data\Res\tb_Buff.res" />
+		<None Remove="Data\Res\tb_CashBilling_Info.res" />
+		<None Remove="Data\Res\tb_CashShop_Charge.res" />
+		<None Remove="Data\Res\tb_CashShop.res" />
+		<None Remove="Data\Res\tb_ChallengeOption.res" />
+		<None Remove="Data\Res\tb_Change_Mob_ID.res" />
+		<None Remove="Data\Res\tb_change_tab.res" />
+		<None Remove="Data\Res\tb_Channel_Global.res" />
+		<None Remove="Data\Res\tb_Character_Background.res" />
+		<None Remove="Data\Res\tb_Character_Info.res" />
+		<None Remove="Data\Res\tb_Character_Parts.res" />
+		<None Remove="Data\Res\tb_ChattingCommand.res" />
+		<None Remove="Data\Res\tb_ChattingFilter.res" />
+		<None Remove="Data\Res\tb_Check_Access_Reward.res" />
+		<None Remove="Data\Res\tb_Check_Attendance_Info.res" />
+		<None Remove="Data\Res\tb_Check_Attendance_Reward.res" />
+		<None Remove="Data\Res\tb_Check_Attendance_Streak.res" />
+		<None Remove="Data\Res\tb_Cinema_String_ENG.res" />
+		<None Remove="Data\Res\tb_Cinema_String_TWN.res" />
+		<None Remove="Data\Res\tb_Cinema_String.res" />
+		<None Remove="Data\Res\tb_Class_form.res" />
+		<None Remove="Data\Res\tb_Class_Speech_2.res" />
+		<None Remove="Data\Res\tb_Class_Speech.res" />
+		<None Remove="Data\Res\tb_ClassBattle_Role.res" />
+		<None Remove="Data\Res\tb_ClassSelect_Info.res" />
+		<None Remove="Data\Res\tb_Color.res" />
+		<None Remove="Data\Res\tb_Combo_Buff.res" />
+		<None Remove="Data\Res\tb_Common.res" />
+		<None Remove="Data\Res\tb_ControlKeyInfo.res" />
+		<None Remove="Data\Res\tb_Costume_Extraction.res" />
+		<None Remove="Data\Res\tb_Costume_Socket.res" />
+		<None Remove="Data\Res\tb_Create_Cloth.res" />
+		<None Remove="Data\Res\tb_CreateOption.res" />
+		<None Remove="Data\Res\tb_Credit_Raise.res" />
+		<None Remove="Data\Res\tb_Cultivation.res" />
+		<None Remove="Data\Res\tb_Customer_Benefit.res" />
+		<None Remove="Data\Res\tb_Customer_Grade.res" />
+		<None Remove="Data\Res\tb_Customize_Eyes.res" />
+		<None Remove="Data\Res\tb_Customize_Hair.res" />
+		<None Remove="Data\Res\tb_Customize_Info.res" />
+		<None Remove="Data\Res\tb_Customize_Skin.res" />
+		<None Remove="Data\Res\tb_Customize_View_Ani.res" />
+		<None Remove="Data\Res\tb_Customize_View_Costume.res" />
+		<None Remove="Data\Res\tb_Customize_View_Sound.res" />
+		<None Remove="Data\Res\tb_Customize_View_Weapon.res" />
+		<None Remove="Data\Res\tb_Cutscene_String_ENG.res" />
+		<None Remove="Data\Res\tb_Cutscene_String_TWN.res" />
+		<None Remove="Data\Res\tb_Cutscene_String.res" />
+		<None Remove="Data\Res\tb_Daily_Mission.res" />
+		<None Remove="Data\Res\tb_DailyMaze_Portal.res" />
+		<None Remove="Data\Res\tb_Deck_Bonus.res" />
+		<None Remove="Data\Res\tb_Def_Attack.res" />
+		<None Remove="Data\Res\tb_Defensive_Weapon.res" />
+		<None Remove="Data\Res\tb_Dice_Episode.res" />
+		<None Remove="Data\Res\tb_Dice_Event.res" />
+		<None Remove="Data\Res\tb_Dice_Reward.res" />
+		<None Remove="Data\Res\tb_Disassemble.res" />
+		<None Remove="Data\Res\tb_District_Transport.res" />
+		<None Remove="Data\Res\tb_district.res" />
+		<None Remove="Data\Res\tb_Divergence.res" />
+		<None Remove="Data\Res\tb_DivisionRankReward.res" />
+		<None Remove="Data\Res\Tb_Drop_Symbol.res" />
+		<None Remove="Data\Res\tb_DS_Point.res" />
+		<None Remove="Data\Res\tb_Dye_Info.res" />
+		<None Remove="Data\Res\tb_Dye.res" />
+		<None Remove="Data\Res\tb_Echelon.res" />
+		<None Remove="Data\Res\tb_Emoticon.res" />
+		<None Remove="Data\Res\tb_Equalizer_Info.res" />
+		<None Remove="Data\Res\tb_Equalizer_Summon.res" />
+		<None Remove="Data\Res\tb_Event_Condition.res" />
+		<None Remove="Data\Res\tb_Faction.res" />
+		<None Remove="Data\Res\tb_Fragment_Exchange.res" />
+		<None Remove="Data\Res\tb_Fragment_Extraction.res" />
+		<None Remove="Data\Res\tb_FX_BattleMaterial_Link.res" />
+		<None Remove="Data\Res\tb_Gesture_Slot_Extend.res" />
+		<None Remove="Data\Res\tb_Gesture.res" />
+		<None Remove="Data\Res\tb_Help_ENG.res" />
+		<None Remove="Data\Res\tb_Help_PopUp_ENG.res" />
+		<None Remove="Data\Res\tb_Help_PopUp_TWN.res" />
+		<None Remove="Data\Res\tb_Help_PopUp.res" />
+		<None Remove="Data\Res\tb_Help_TWN.res" />
+		<None Remove="Data\Res\tb_Help.res" />
+		<None Remove="Data\Res\tb_Helper_Reward.res" />
+		<None Remove="Data\Res\tb_Helper.res" />
+		<None Remove="Data\Res\tb_Hidden_Event.res" />
+		<None Remove="Data\Res\tb_HitVFX.res" />
+		<None Remove="Data\Res\tb_Infinite_Tower_Monster.res" />
+		<None Remove="Data\Res\tb_Infinite_Tower.res" />
+		<None Remove="Data\Res\tb_Interaction_Item.res" />
+		<None Remove="Data\Res\tb_Interaction_Object.res" />
+		<None Remove="Data\Res\tb_Inven_Slot_Extend.res" />
+		<None Remove="Data\Res\tb_Item_Classify.res" />
+		<None Remove="Data\Res\tb_Item_Classreward_Link.res" />
+		<None Remove="Data\Res\tb_Item_CostumeSet.res" />
+		<None Remove="Data\Res\tb_Item_CountBox_Group.res" />
+		<None Remove="Data\Res\tb_Item_CountBox.res" />
+		<None Remove="Data\Res\tb_Item_Evolution.res" />
+		<None Remove="Data\Res\tb_item_extraction.res" />
+		<None Remove="Data\Res\tb_item_information.res" />
+		<None Remove="Data\Res\tb_item_model.res" />
+		<None Remove="Data\Res\tb_Item_Package.res" />
+		<None Remove="Data\Res\tb_Item_RandomBox.res" />
+		<None Remove="Data\Res\tb_Item_Repair.res" />
+		<None Remove="Data\Res\tb_item_script_ENG.res" />
+		<None Remove="Data\Res\tb_item_script_TWN.res" />
+		<None Remove="Data\Res\tb_item_script.res" />
+		<None Remove="Data\Res\tb_Item_SetItem.res" />
+		<None Remove="Data\Res\tb_item_SimilarGroup.res" />
+		<None Remove="Data\Res\tb_Item_SubModel.res" />
+		<None Remove="Data\Res\tb_Item_Title_Change.res" />
+		<None Remove="Data\Res\tb_item_Title_Group.res" />
+		<None Remove="Data\Res\tb_item_Title_Value.res" />
+		<None Remove="Data\Res\tb_item_title.res" />
+		<None Remove="Data\Res\tb_Item.res" />
+		<None Remove="Data\Res\tb_League_Attendance.res" />
+		<None Remove="Data\Res\tb_League_Info.res" />
+		<None Remove="Data\Res\tb_League_Mark.res" />
+		<None Remove="Data\Res\tb_League_Raid.res" />
+		<None Remove="Data\Res\tb_League_Skill.res" />
+		<None Remove="Data\Res\tb_LeagueSkill_Script_ENG.res" />
+		<None Remove="Data\Res\tb_LeagueSkill_Script_TWN.res" />
+		<None Remove="Data\Res\tb_LeagueSkill_Script.res" />
+		<None Remove="Data\Res\tb_Levelup_Point.res" />
+		<None Remove="Data\Res\tb_Loading_Img.res" />
+		<None Remove="Data\Res\tb_Loading_String.res" />
+		<None Remove="Data\Res\tb_Loading.res" />
+		<None Remove="Data\Res\tb_Make.res" />
+		<None Remove="Data\Res\tb_Maze_Enter_Count_Group.res" />
+		<None Remove="Data\Res\tb_Maze_Info.res" />
+		<None Remove="Data\Res\tb_Maze_Open_Group.res" />
+		<None Remove="Data\Res\tb_Maze_OpenControl.res" />
+		<None Remove="Data\Res\tb_Maze_Portal.res" />
+		<None Remove="Data\Res\tb_Maze_Select.res" />
+		<None Remove="Data\Res\tb_MazeReward_Difficulty.res" />
+		<None Remove="Data\Res\tb_MazeReward_GoldDirect.res" />
+		<None Remove="Data\Res\tb_MazeReward_Level.res" />
+		<None Remove="Data\Res\tb_MazeReward_Normal.res" />
+		<None Remove="Data\Res\tb_MazeReward_PartyValue.res" />
+		<None Remove="Data\Res\tb_MazeReward_Rank.res" />
+		<None Remove="Data\Res\tb_MazeReward_SoulVaper.res" />
+		<None Remove="Data\Res\tb_MazeReward_Time.res" />
+		<None Remove="Data\Res\tb_MessageNotifyer.res" />
+		<None Remove="Data\Res\tb_Mileage.res" />
+		<None Remove="Data\Res\tb_Mode_BI_Sector_Info.res" />
+		<None Remove="Data\Res\tb_Mode_BI_Skill_Edit.res" />
+		<None Remove="Data\Res\tb_Mode_BI_Upgrade.res" />
+		<None Remove="Data\Res\tb_Mode_CardMatch_Card.res" />
+		<None Remove="Data\Res\tb_Mode_CardMatch_Faction.res" />
+		<None Remove="Data\Res\tb_Mode_CardMatch_Rule.res" />
+		<None Remove="Data\Res\tb_Mode_District6_Date.res" />
+		<None Remove="Data\Res\tb_Mode_District6.res" />
+		<None Remove="Data\Res\tb_Mode_Operation.res" />
+		<None Remove="Data\Res\tb_Mode_Resources.res" />
+		<None Remove="Data\Res\tb_Monster_Broken_Parts.res" />
+		<None Remove="Data\Res\tb_Monster_Parts.res" />
+		<None Remove="Data\Res\tb_Monster_RimLight.res" />
+		<None Remove="Data\Res\tb_Monster_script_ENG.res" />
+		<None Remove="Data\Res\tb_Monster_script_TWN.res" />
+		<None Remove="Data\Res\tb_Monster_script.res" />
+		<None Remove="Data\Res\tb_Monster_Weapon.res" />
+		<None Remove="Data\Res\tb_Monster.res" />
+		<None Remove="Data\Res\tb_Myroom_Default.res" />
+		<None Remove="Data\Res\tb_Myroom_Furniture.res" />
+		<None Remove="Data\Res\tb_Myroom_Greed.res" />
+		<None Remove="Data\Res\tb_Myroom_Info.res" />
+		<None Remove="Data\Res\tb_NameFilter.res" />
+		<None Remove="Data\Res\tb_Navigation_Warpmap.res" />
+		<None Remove="Data\Res\tb_Notice.res" />
+		<None Remove="Data\Res\tb_NPC_Parts.res" />
+		<None Remove="Data\Res\tb_NPC_Script_ENG.res" />
+		<None Remove="Data\Res\tb_NPC_Script_TWN.res" />
+		<None Remove="Data\Res\tb_NPC_Script.res" />
+		<None Remove="Data\Res\tb_NPC.res" />
+		<None Remove="Data\Res\tb_Operation_Info.res" />
+		<None Remove="Data\Res\tb_Option_String.res" />
+		<None Remove="Data\Res\tb_PartyRevise.res" />
+		<None Remove="Data\Res\tb_Pass_Info.res" />
+		<None Remove="Data\Res\tb_Pass_Reward.res" />
+		<None Remove="Data\Res\tb_PC_Akashic.res" />
+		<None Remove="Data\Res\tb_PC_Costume.res" />
+		<None Remove="Data\Res\tb_PC_Reward_System_Month.res" />
+		<None Remove="Data\Res\tb_PC_Reward_System.res" />
+		<None Remove="Data\Res\tb_Photo_Item.res" />
+		<None Remove="Data\Res\tb_PLUS_System.res" />
+		<None Remove="Data\Res\tb_Pollen.res" />
+		<None Remove="Data\Res\tb_PreSet.res" />
+		<None Remove="Data\Res\tb_PvP_levelup_Point.res" />
+		<None Remove="Data\Res\tb_PvP_Limit.res" />
+		<None Remove="Data\Res\tb_PVP_Revise_NI.res" />
+		<None Remove="Data\Res\tb_PVP_Revise.res" />
+		<None Remove="Data\Res\tb_PvP_Role.res" />
+		<None Remove="Data\Res\tb_Quest_Chapter.res" />
+		<None Remove="Data\Res\tb_Quest_Condition.res" />
+		<None Remove="Data\Res\tb_Quest_Episode.res" />
+		<None Remove="Data\Res\tb_Quest_Reward.res" />
+		<None Remove="Data\Res\tb_Quest_Script_ENG.res" />
+		<None Remove="Data\Res\tb_Quest_Script_TWN.res" />
+		<None Remove="Data\Res\tb_Quest_Script.res" />
+		<None Remove="Data\Res\tb_Quest_Season.res" />
+		<None Remove="Data\Res\tb_Random_Change.res" />
+		<None Remove="Data\Res\tb_Random_Get_Group.res" />
+		<None Remove="Data\Res\tb_Random_Get.res" />
+		<None Remove="Data\Res\tb_Random_Option.res" />
+		<None Remove="Data\Res\tb_Rank_Category_Group.res" />
+		<None Remove="Data\Res\tb_Rank_Change.res" />
+		<None Remove="Data\Res\tb_Rank_Info.res" />
+		<None Remove="Data\Res\tb_Rank_Reward_Totalpoint.res" />
+		<None Remove="Data\Res\tb_Rank_Reward.res" />
+		<None Remove="Data\Res\tb_Rank_Tier.res" />
+		<None Remove="Data\Res\tb_Reinforce_Exchange.res" />
+		<None Remove="Data\Res\tb_Reinforce_Option.res" />
+		<None Remove="Data\Res\tb_Reinforce.res" />
+		<None Remove="Data\Res\tb_RepackageCostume.res" />
+		<None Remove="Data\Res\tb_ResVFX.res" />
+		<None Remove="Data\Res\tb_RoomRank_Reward.res" />
+		<None Remove="Data\Res\tb_RSP_Event.res" />
+		<None Remove="Data\Res\tb_Select_Item.res" />
+		<None Remove="Data\Res\tb_SFX_BattleMaterial.res" />
+		<None Remove="Data\Res\tb_SFX_GroundMaterial.res" />
+		<None Remove="Data\Res\tb_Shop_String_ENG.res" />
+		<None Remove="Data\Res\tb_Shop_String_TWN.res" />
+		<None Remove="Data\Res\tb_Shop_String.res" />
+		<None Remove="Data\Res\tb_Shop.res" />
+		<None Remove="Data\Res\tb_Skill_Action.res" />
+		<None Remove="Data\Res\tb_Skill_Divide.res" />
+		<None Remove="Data\Res\tb_Skill_Option.res" />
+		<None Remove="Data\Res\tb_Skill_Script_ENG.res" />
+		<None Remove="Data\Res\tb_Skill_Script_TWN.res" />
+		<None Remove="Data\Res\tb_Skill_Script.res" />
+		<None Remove="Data\Res\tb_Skill_Slot_Extend.res" />
+		<None Remove="Data\Res\tb_Skill.res" />
+		<None Remove="Data\Res\tb_Social_Item.res" />
+		<None Remove="Data\Res\tb_Social_Motion.res" />
+		<None Remove="Data\Res\tb_Socket.res" />
+		<None Remove="Data\Res\tb_Soul_Guage.res" />
+		<None Remove="Data\Res\tb_soul_metry_string_ENG.res" />
+		<None Remove="Data\Res\tb_soul_metry_string_TWN.res" />
+		<None Remove="Data\Res\tb_soul_metry_string.res" />
+		<None Remove="Data\Res\tb_soul_metry.res" />
+		<None Remove="Data\Res\tb_SoulStone_LevelUp.res" />
+		<None Remove="Data\Res\tb_SpecialMaze_Open.res" />
+		<None Remove="Data\Res\tb_Speech_String_ENG.res" />
+		<None Remove="Data\Res\tb_Speech_String_TWN.res" />
+		<None Remove="Data\Res\tb_Speech_String.res" />
+		<None Remove="Data\Res\tb_Speech_tag.res" />
+		<None Remove="Data\Res\tb_Speech.res" />
+		<None Remove="Data\Res\tb_Statistics.res" />
+		<None Remove="Data\Res\tb_Status.res" />
+		<None Remove="Data\Res\tb_SubWeapon.res" />
+		<None Remove="Data\Res\tb_SystemMail_ENG.res" />
+		<None Remove="Data\Res\tb_SystemMail_TWN.res" />
+		<None Remove="Data\Res\tb_SystemMail.res" />
+		<None Remove="Data\Res\tb_Talk_List.res" />
+		<None Remove="Data\Res\tb_Talk_String.res" />
+		<None Remove="Data\Res\tb_Talk.res" />
+		<None Remove="Data\Res\tb_Time.res" />
+		<None Remove="Data\Res\tb_Title_Info.res" />
+		<None Remove="Data\Res\tb_Title_Reward.res" />
+		<None Remove="Data\Res\tb_Title_String_ENG.res" />
+		<None Remove="Data\Res\tb_Title_String_TWN.res" />
+		<None Remove="Data\Res\tb_Title_String.res" />
+		<None Remove="Data\Res\tb_Tooltip_String_ENG.res" />
+		<None Remove="Data\Res\tb_Tooltip_String_TWN.res" />
+		<None Remove="Data\Res\tb_Tooltip_String.res" />
+		<None Remove="Data\Res\tb_Transfer_Group.res" />
+		<None Remove="Data\Res\tb_Transfer.res" />
+		<None Remove="Data\Res\tb_Transport_Info.res" />
+		<None Remove="Data\Res\tb_Transport_NPC_Pos.res" />
+		<None Remove="Data\Res\tb_UI_Img_ENG.res" />
+		<None Remove="Data\Res\tb_UI_Img_TWN.res" />
+		<None Remove="Data\Res\tb_UI_Img.res" />
+		<None Remove="Data\Res\tb_UI_PopUp.res" />
+		<None Remove="Data\Res\tb_UI_String_ENG.res" />
+		<None Remove="Data\Res\tb_UI_String_TWN.res" />
+		<None Remove="Data\Res\tb_UI_String.res" />
+		<None Remove="Data\Res\tb_Unity_Event.res" />
+		<None Remove="Data\Res\tb_VFX_BattleMaterial.res" />
+		<None Remove="Data\Res\tb_VFX_GroundMaterial.res" />
+		<None Remove="Data\Res\tb_VoiceRing.res" />
+		<None Remove="Data\Res\tb_Warlord_GUI.res" />
+		<None Remove="Data\Res\tb_Week_Day.res" />
+		<None Remove="Data\Res\tb_Week_Group.res" />
+		<None Remove="Data\Res\tb_Week_Mission.res" />
+		<None Remove="Data\Res\tb_Win_Pose.res" />
+		<None Remove="Data\Res\tb_world_event_reward.res" />
+		<None Remove="Data\Res\tb_world_event.res" />
+		<None Remove="Data\SoulWorker_dump.exe" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Include="Data\SoulWorker_dump.exe">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </Content>
+		<Content Include="Data\Res\tb_Achievement_begin.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Achievement_Emblem.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Achievement_Script_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Achievement_Script_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Achievement_Script.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Achievement.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Akashic_Combination.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Akashic_Disassemble.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Akashic_Make.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Akashic_Parts.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Akashic_Records.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Akashic_Slot_Extend.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Appearance.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_ApplyChallenge.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Aura.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Bank_Slot_Extend.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Battle_Arena_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Booster_Script_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Booster_Script_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Booster_Script.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Booster.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\Tb_Broach_set_book.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\Tb_Broach_Set.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_broach_Simulator.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\TB_BroachData.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Buff_Script_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Buff_Script_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Buff_Script.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Buff.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_CashBilling_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_CashShop_Charge.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_CashShop.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_ChallengeOption.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Change_Mob_ID.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_change_tab.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Channel_Global.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Character_Background.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Character_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Character_Parts.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_ChattingCommand.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_ChattingFilter.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Check_Access_Reward.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Check_Attendance_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Check_Attendance_Reward.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Check_Attendance_Streak.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Cinema_String_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Cinema_String_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Cinema_String.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Class_form.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Class_Speech_2.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Class_Speech.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_ClassBattle_Role.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_ClassSelect_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Color.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Combo_Buff.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Common.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_ControlKeyInfo.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Costume_Extraction.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Costume_Socket.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Create_Cloth.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_CreateOption.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Credit_Raise.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Cultivation.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Customer_Benefit.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Customer_Grade.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Customize_Eyes.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Customize_Hair.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Customize_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Customize_Skin.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Customize_View_Ani.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Customize_View_Costume.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Customize_View_Sound.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Customize_View_Weapon.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Cutscene_String_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Cutscene_String_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Cutscene_String.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Daily_Mission.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_DailyMaze_Portal.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Deck_Bonus.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Def_Attack.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Defensive_Weapon.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Dice_Episode.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Dice_Event.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Dice_Reward.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Disassemble.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_District_Transport.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_district.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Divergence.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_DivisionRankReward.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\Tb_Drop_Symbol.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_DS_Point.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Dye_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Dye.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Echelon.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Emoticon.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Equalizer_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Equalizer_Summon.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Event_Condition.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Faction.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Fragment_Exchange.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Fragment_Extraction.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_FX_BattleMaterial_Link.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Gesture_Slot_Extend.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Gesture.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Help_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Help_PopUp_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Help_PopUp_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Help_PopUp.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Help_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Help.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Helper_Reward.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Helper.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Hidden_Event.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_HitVFX.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Infinite_Tower_Monster.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Infinite_Tower.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Interaction_Item.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Interaction_Object.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Inven_Slot_Extend.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_Classify.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_Classreward_Link.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_CostumeSet.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_CountBox_Group.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_CountBox.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_Evolution.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_item_extraction.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_item_information.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_item_model.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_Package.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_RandomBox.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_Repair.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_item_script_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_item_script_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_item_script.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_SetItem.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_item_SimilarGroup.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_SubModel.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item_Title_Change.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_item_Title_Group.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_item_Title_Value.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_item_title.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Item.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_League_Attendance.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_League_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_League_Mark.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_League_Raid.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_League_Skill.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_LeagueSkill_Script_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_LeagueSkill_Script_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_LeagueSkill_Script.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Levelup_Point.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Loading_Img.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Loading_String.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Loading.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Make.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Maze_Enter_Count_Group.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Maze_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Maze_Open_Group.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Maze_OpenControl.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Maze_Portal.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Maze_Select.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_MazeReward_Difficulty.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_MazeReward_GoldDirect.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_MazeReward_Level.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_MazeReward_Normal.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_MazeReward_PartyValue.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_MazeReward_Rank.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_MazeReward_SoulVaper.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_MazeReward_Time.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_MessageNotifyer.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Mileage.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Mode_BI_Sector_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Mode_BI_Skill_Edit.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Mode_BI_Upgrade.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Mode_CardMatch_Card.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Mode_CardMatch_Faction.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Mode_CardMatch_Rule.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Mode_District6_Date.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Mode_District6.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Mode_Operation.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Mode_Resources.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Monster_Broken_Parts.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Monster_Parts.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Monster_RimLight.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Monster_script_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Monster_script_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Monster_script.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Monster_Weapon.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Monster.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Myroom_Default.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Myroom_Furniture.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Myroom_Greed.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Myroom_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_NameFilter.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Navigation_Warpmap.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Notice.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_NPC_Parts.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_NPC_Script_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_NPC_Script_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_NPC_Script.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_NPC.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Operation_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Option_String.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PartyRevise.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Pass_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Pass_Reward.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PC_Akashic.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PC_Costume.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PC_Reward_System_Month.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PC_Reward_System.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Photo_Item.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PLUS_System.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Pollen.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PreSet.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PvP_levelup_Point.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PvP_Limit.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PVP_Revise_NI.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PVP_Revise.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_PvP_Role.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Quest_Chapter.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Quest_Condition.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Quest_Episode.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Quest_Reward.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Quest_Script_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Quest_Script_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Quest_Script.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Quest_Season.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Random_Change.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Random_Get_Group.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Random_Get.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Random_Option.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Rank_Category_Group.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Rank_Change.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Rank_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Rank_Reward_Totalpoint.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Rank_Reward.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Rank_Tier.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Reinforce_Exchange.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Reinforce_Option.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Reinforce.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_RepackageCostume.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_ResVFX.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_RoomRank_Reward.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_RSP_Event.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Select_Item.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_SFX_BattleMaterial.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_SFX_GroundMaterial.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Shop_String_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Shop_String_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Shop_String.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Shop.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Skill_Action.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Skill_Divide.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Skill_Option.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Skill_Script_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Skill_Script_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Skill_Script.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Skill_Slot_Extend.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Skill.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Social_Item.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Social_Motion.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Socket.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Soul_Guage.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_soul_metry_string_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_soul_metry_string_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_soul_metry_string.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_soul_metry.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_SoulStone_LevelUp.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_SpecialMaze_Open.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Speech_String_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Speech_String_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Speech_String.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Speech_tag.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Speech.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Statistics.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Status.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_SubWeapon.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_SystemMail_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_SystemMail_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_SystemMail.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Talk_List.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Talk_String.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Talk.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Time.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Title_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Title_Reward.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Title_String_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Title_String_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Title_String.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Tooltip_String_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Tooltip_String_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Tooltip_String.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Transfer_Group.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Transfer.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Transport_Info.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Transport_NPC_Pos.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_UI_Img_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_UI_Img_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_UI_Img.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_UI_PopUp.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_UI_String_ENG.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_UI_String_TWN.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_UI_String.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Unity_Event.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_VFX_BattleMaterial.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_VFX_GroundMaterial.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_VoiceRing.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Warlord_GUI.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Week_Day.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Week_Group.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Week_Mission.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_Win_Pose.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_world_event_reward.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\Res\tb_world_event.res">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Data\SoulWorker_dump.exe">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -29,7 +1285,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\SoulWorker.ResStructureExtractor\SoulWorker.ResStructureExtractor.csproj" />
+		<ProjectReference Include="..\SoulWorker.ResStructureExtractor\SoulWorker.ResStructureExtractor.csproj" />
 	</ItemGroup>
 
 </Project>

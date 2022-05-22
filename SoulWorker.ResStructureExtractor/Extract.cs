@@ -2,9 +2,9 @@
 
 public static class Extract
 {
-    public static async ValueTask<Dictionary<string, string[]>> FromUnpacked(string path)
+    public static async ValueTask<Dictionary<string, Type[]>> FromUnpacked(string path)
     {
         var extractor = await Extractor.Create(path);
-        return await extractor.FromUnpacked();
+        return extractor.FromUnpacked();
     }
 }

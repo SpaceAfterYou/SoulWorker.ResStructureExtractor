@@ -3,7 +3,7 @@ using SoulWorker.ResStructureExtractor.DataTypes.MemoryInfo;
 
 namespace SoulWorker.ResStructureExtractor;
 
-internal readonly struct TableFunctionFileInfo
+internal sealed record TableFunctionFileInfo
 {
     #region Fields
 

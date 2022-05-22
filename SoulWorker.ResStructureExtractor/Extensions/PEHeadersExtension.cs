@@ -22,7 +22,7 @@ internal static class PEHeadersExtension
         return ValueTask.FromResult(offset);
     }
 
-    internal static ValueTask<int> AddressFrom(this PEHeaders headers, int offset)
+    internal static int AddressFrom(this PEHeaders headers, int offset)
     {
         var header = headers.PEHeader;
         if (header is null) throw new ApplicationException("Header not found");
@@ -34,7 +34,7 @@ internal static class PEHeadersExtension
 
         Debug.WriteLine($"Address: {address:X} from offset {offset:X}");
 
-        return ValueTask.FromResult(address);
+        return address;
     }
 
     #region Private Static Methods

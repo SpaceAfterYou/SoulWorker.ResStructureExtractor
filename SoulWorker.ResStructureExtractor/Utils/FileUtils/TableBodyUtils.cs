@@ -23,11 +23,11 @@ internal static class TableBodyUtils
         .Range(0, memory.Length - pattern.Length)
         .Any(v => StartsWith(memory[v..], pattern));
 
-    internal static ValueTask<int> OffsetByPatternAsync(ReadOnlyMemory<byte> memory, ReadOnlyMemory<byte?> pattern) => ValueTask.FromResult(Enumerable
+    internal static int OffsetByPattern(ReadOnlyMemory<byte> memory, ReadOnlyMemory<byte?> pattern) => Enumerable
         .Range(0, memory.Length - pattern.Length)
-        .First(v => StartsWith(memory[v..], pattern)));
+        .First(v => StartsWith(memory[v..], pattern)) + pattern.Length;
 
-    internal static async ValueTask<Range> BodyFrom(ReadOnlyMemory<byte> memory, int offset)
+    internal static Range BodyFrom(ReadOnlyMemory<byte> memory, int offset)
     {
         var mem = memory[offset..];
 
@@ -35,7 +35,7 @@ internal static class TableBodyUtils
             .Range(0, mem.Length)
             .First(v => mem[v..].Span.StartsWith(_beginBlock.Span));
 
-        var end = await OffsetByPatternAsync(memory[begin..], _endBlock);
+        var end = OffsetByPattern(memory[begin..], _endBlock);        
 
         return new Range(begin, begin + end);
     }
@@ -110,7 +110,7 @@ internal static class TableBodyUtils
     /// <summary>
     ///    jmp     loc_XXXXXX
     /// </summary>
-    private readonly static ReadOnlyMemory<byte?> _endBlock = new byte?[] { 0xE9, null, null, 0xFF, 0xFF };
+    private readonly static ReadOnlyMemory<byte?> _endBlock = new byte?[] { 0x8B, 0xE5, 0x5D, 0xC3 };
 
     /// <summary>
     ///    lea     edx, [ebp+var_]    ; 8D 4D A4
