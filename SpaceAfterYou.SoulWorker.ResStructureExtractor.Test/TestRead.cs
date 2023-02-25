@@ -21,8 +21,8 @@ public sealed class TestRead
     [TestMethod]
     public async Task ReadFromUnpackedTest()
     {
-        var results = await Extract.FromUnpacked(Path.Join("Data", "SoulWorker_dump.exe"));
-        var files = Directory.EnumerateFiles(Path.Join("Data", "Res"));
+        var results = await Extract.FromUnpacked(Path.Combine("Data", "SoulWorker_dump.exe"));
+        var files = Directory.EnumerateFiles(Path.Combine("Data", "Res"));
 
         await Parallel.ForEachAsync(files, async (file, ct) =>
         {
