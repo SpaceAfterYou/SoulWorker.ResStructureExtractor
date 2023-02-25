@@ -1,0 +1,49 @@
+name: "Deploy CLI"
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [ "main" ]
+
+env:
+  DOTNET_MAJOR_VERSION: 7
+  VERSION: 1.0.0.0
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@main
+      with:
+        lfs: true
+        
+    - name: Setup Version
+      shell: pwsh
+      run: |
+        $date = Get-Date -format "yyyy.MMdd.HHmm"
+        echo "VERSION=${{ env.DOTNET_MAJOR_VERSION }}.$date" >> $env:GITHUB_ENV
+        
+    - name: Restore dependencies
+      shell: pwsh
+      run: dotnet restore
+
+    - name: Publish
+      shell: pwsh
+      run: dotnet publish --no-restore --configuration Release -p:Version=${{ env.VERSION }} -o SpaceAfterYou.SoulWorker.ResStructureExtractor.Cli
+
+    - name: Run Tests
+      shell: pwsh
+      run: dotnet test --no-restore --no-build --configuration Release
+      
+    - name: Zip
+      run: tar -cvf SoulWorker_ResStructureExtractor_${{ env.VERSION }}.zip -C bin *
+      
+    - name: Release
+      uses: softprops/action-gh-release@master
+      with:
+        files: SoulWorker_ResStructureExtractor_${{ env.VERSION }}.zip
+        tag_name: ${{ env.VERSION }}
+        generate_release_notes: true

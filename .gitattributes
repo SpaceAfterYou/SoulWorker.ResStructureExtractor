@@ -1,2 +1,2 @@
-*.exe filter=lfs diff=lfs merge=lfs
-*.res filter=lfs diff=lfs merge=lfs
+*.exe filter=lfs diff=lfs merge=lfs binary
+*.res filter=lfs diff=lfs merge=lfs binary
