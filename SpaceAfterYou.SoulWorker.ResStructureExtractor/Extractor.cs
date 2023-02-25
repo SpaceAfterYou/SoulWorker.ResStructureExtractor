@@ -40,10 +40,10 @@ internal sealed class Extractor
                 .ToDictionary(k => k.Name.Value, v => v.Types);
     }
 
-    internal static async ValueTask<Extractor> Create(string path)
+    internal static async Task<Extractor> Create(string path)
     {
-        await using var stream = File.OpenRead(path);
-
+        using var stream = File.OpenRead(path);
+        
         return new Extractor(path, new PEHeaders(stream));
     }
 

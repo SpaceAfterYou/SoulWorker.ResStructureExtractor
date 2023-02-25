@@ -60,7 +60,7 @@ internal static class TableNameUtils
                 // But in some cases it may be different
                 if (b != EndOfString) break;
 
-                var name = Encoding.ASCII.GetString(span[..end]);
+                var name = Encoding.ASCII.GetString(span[..end].ToArray());
                 yield return new NameFileInfo(name, begin);
 
                 begin += end;

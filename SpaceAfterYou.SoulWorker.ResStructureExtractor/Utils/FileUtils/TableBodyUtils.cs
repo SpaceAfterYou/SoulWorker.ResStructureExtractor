@@ -50,14 +50,13 @@ internal static class TableBodyUtils
 
     private static TableReadFunctionFileInfo CreateInfo(ReadOnlyMemory<byte> memory, int v, Range range)
     {
-        var span = memory[CreateRange(v)].Span;
-        var value = BitConverter.ToInt32(span);
+        var callOffset = BitConverter.ToInt32(memory.Span[CreateRange(v)].ToArray(), 0);
 
         // Start of CALL instruction
         // E8 XX XX XX XX
-        var offset = range.Start.Value + v + _pattern.Length - 1;
+        var fileOffset = range.Start.Value + v + _pattern.Length - 1;
 
-        return new TableReadFunctionFileInfo(offset, value);
+        return new TableReadFunctionFileInfo(fileOffset, callOffset);
     }
 
     private static Range CreateRange(int offset)

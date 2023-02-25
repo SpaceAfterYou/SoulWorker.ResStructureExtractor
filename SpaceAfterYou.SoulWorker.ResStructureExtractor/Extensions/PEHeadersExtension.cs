@@ -5,21 +5,21 @@ namespace SpaceAfterYou.SoulWorker.ResStructureExtractor.Extensions;
 
 internal static class PEHeadersExtension
 {
-    internal static ValueTask<int> OffsetFrom(this PEHeaders headers, int address)
+    internal static Task<int> OffsetFrom(this PEHeaders headers, int address)
     {
         var header = headers.PEHeader;
         if (header is null) throw new ApplicationException("Header not found");
-
+        
         var section = headers.SectionHeaders.FirstOrDefault(v => IsValidSection(v, (int)header.ImageBase, address));
 
         Debug.WriteLineIf(section.Name is null, "Section not found");
-        if (section.Name is null) return ValueTask.FromResult(-1);
+        if (section.Name is null) return Task.FromResult(-1);
 
         var offset = address - ((int)header.ImageBase + section.VirtualAddress) + section.PointerToRawData;
 
         Debug.WriteLine($"Offset: {offset:X} from address {address:X}");
 
-        return ValueTask.FromResult(offset);
+        return Task.FromResult(offset);
     }
 
     internal static int AddressFrom(this PEHeaders headers, int offset)
