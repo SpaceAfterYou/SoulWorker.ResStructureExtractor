@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SpaceAfterYou.SoulWorker.ResStructureExtractor;
 using System;
 using System.IO;
 using System.Linq;
@@ -22,8 +21,8 @@ public sealed class TestRead
     [TestMethod]
     public async Task ReadFromUnpackedTest()
     {
-        var results = await Extract.FromUnpacked(@"Data\SoulWorker_dump.exe");
-        var files = Directory.EnumerateFiles(@"Data\Res");
+        var results = await Extract.FromUnpacked(Path.Join("Data", "SoulWorker_dump.exe"));
+        var files = Directory.EnumerateFiles(Path.Join("Data", "Res"));
 
         await Parallel.ForEachAsync(files, async (file, ct) =>
         {
