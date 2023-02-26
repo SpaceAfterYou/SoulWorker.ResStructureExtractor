@@ -2,7 +2,6 @@
 using SpaceAfterYou.SoulWorker.ResStructureExtractor.DataTypes.MemoryInfo;
 using SpaceAfterYou.SoulWorker.ResStructureExtractor.Extensions;
 using SpaceAfterYou.SoulWorker.ResStructureExtractor.Utils.FileUtils;
-using System;
 using System.Reflection.PortableExecutable;
 
 namespace SpaceAfterYou.SoulWorker.ResStructureExtractor;
@@ -43,9 +42,9 @@ internal sealed class Extractor
 
     internal static Extractor Create(byte[] buffer) => new(buffer);
 
-    internal static Extractor Create(string path)
+    internal static async ValueTask<Extractor> Create(string path)
     {
-        using var stream = File.OpenRead(path);
+        await using var stream = File.OpenRead(path);
         
         return new Extractor(path, new PEHeaders(stream));
     }

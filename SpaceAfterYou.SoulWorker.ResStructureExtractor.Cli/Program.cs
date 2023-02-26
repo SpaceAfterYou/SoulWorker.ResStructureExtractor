@@ -3,7 +3,7 @@ using SpaceAfterYou.SoulWorker.ResStructureExtractor;
 using System.Text.Json;
 
 var config = new Config(args);
-var results = Extract.FromUnpacked(config.Path).ToDictionary(k => k.Key, v => v.Value.Select(v => v.Name).ToArray());
+var results = (await Extract.FromUnpacked(config.Path)).ToDictionary(k => k.Key, v => v.Value.Select(v => v.Name).ToArray());
 
 if (config.File is not null)
 {
@@ -12,9 +12,9 @@ if (config.File is not null)
         WriteIndented = true,
     };
 
-    var json = JsonSerializer.Serialize(results, opts);
+    var output = JsonSerializer.Serialize(results, opts);
 
-    await File.WriteAllTextAsync(config.File, json);
+    await File.WriteAllTextAsync(config.File, output);
 }
 else
 {

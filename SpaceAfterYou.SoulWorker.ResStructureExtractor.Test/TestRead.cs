@@ -1,17 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpaceAfterYou.SoulWorker.ResStructureExtractor.Test;
-
-public static class Utils
-{
-    public static string ReadWideString(BinaryReader reader) => Encoding.UTF8.GetString(reader.ReadBytes(reader.ReadUInt16() * 2));
-    public static string ReadCharString(BinaryReader reader) => Encoding.UTF8.GetString(reader.ReadBytes(reader.ReadUInt16()));
-}
 
 [TestClass]
 public sealed class TestRead
@@ -21,7 +10,7 @@ public sealed class TestRead
     [TestMethod]
     public async Task ReadFromUnpackedTest()
     {
-        var results = Extract.FromUnpacked(Path.Combine("Data", "SoulWorker_dump.exe"));
+        var results = await Extract.FromUnpacked(Path.Combine("Data", "SoulWorker_dump.exe"));
         var files = Directory.EnumerateFiles(Path.Combine("Data", "Res"));
 
         await Parallel.ForEachAsync(files, async (file, ct) =>
