@@ -3,7 +3,6 @@ using SpaceAfterYou.SoulWorker.ResStructureExtractor;
 using System;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace SpaceAfterYou.SoulWorker.ResStructureExtractor.Test;
 
@@ -13,9 +12,9 @@ public sealed class TestExtract
     public TestContext TestContext { get; set; } = default!;
 
     [TestMethod]
-    public async Task FromUnpackedTest()
+    public void FromUnpackedTest()
     {
-        var results = await Extract.FromUnpacked(Path.Combine("Data", "SoulWorker_dump.exe"));
+        var results = Extract.FromUnpacked(Path.Combine("Data", "SoulWorker_dump.exe"));
 
         foreach (var file in Directory.EnumerateFiles(Path.Combine("Data", "Res")))
         {

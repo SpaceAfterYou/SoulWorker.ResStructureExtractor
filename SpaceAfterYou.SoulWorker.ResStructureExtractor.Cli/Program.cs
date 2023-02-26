@@ -3,7 +3,7 @@ using SpaceAfterYou.SoulWorker.ResStructureExtractor;
 using System.Text.Json;
 
 var config = new Config(args);
-var results = (await Extract.FromUnpacked(config.Path)).ToDictionary(k => k.Key, v => v.Value.Select(v => v.Name).ToArray());
+var results = Extract.FromUnpacked(config.Path).ToDictionary(k => k.Key, v => v.Value.Select(v => v.Name).ToArray());
 
 if (config.File is not null)
 {

@@ -2,6 +2,7 @@
 using SpaceAfterYou.SoulWorker.ResStructureExtractor.DataTypes.MemoryInfo;
 using SpaceAfterYou.SoulWorker.ResStructureExtractor.Extensions;
 using SpaceAfterYou.SoulWorker.ResStructureExtractor.Utils.FileUtils;
+using System;
 using System.Reflection.PortableExecutable;
 
 namespace SpaceAfterYou.SoulWorker.ResStructureExtractor;
@@ -40,7 +41,9 @@ internal sealed class Extractor
                 .ToDictionary(k => k.Name.Value, v => v.Types);
     }
 
-    internal static async Task<Extractor> Create(string path)
+    internal static Extractor Create(byte[] buffer) => new(buffer);
+
+    internal static Extractor Create(string path)
     {
         using var stream = File.OpenRead(path);
         
@@ -57,6 +60,12 @@ internal sealed class Extractor
         var type = _fieldTypes.FirstOrDefault((v) => TableBodyUtils.ContainsPattern(memory, v.Pattern))?.Type;
 
         return type ?? typeof(string);
+    }
+
+    private Extractor(byte[] buffer)
+    {
+        _headers = new PEHeaders(new MemoryStream(buffer));
+        _memory = buffer;
     }
 
     private Extractor(string path, PEHeaders headers)
