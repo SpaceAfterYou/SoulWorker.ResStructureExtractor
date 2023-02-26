@@ -32,7 +32,7 @@ jobs:
 
     - name: Publish
       shell: pwsh
-      run: dotnet publish --no-restore --configuration Release -p:Version=${{ env.VERSION }} -o bin
+      run: dotnet publish SpaceAfterYou.SoulWorker.ResStructureExtractor.Cli --no-restore --configuration Release -p:Version=${{ env.VERSION }} -o bin
 
 #    - name: Run Tests
 #      shell: pwsh
