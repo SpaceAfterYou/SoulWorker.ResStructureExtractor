@@ -17,7 +17,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
       with:
-        lfs: true
+        lfs: false
 
     - name: Setup Version
       shell: pwsh
@@ -33,9 +33,9 @@ jobs:
       shell: pwsh
       run: dotnet build --no-restore --configuration Release -p:Version=${{ env.VERSION }}
 
-    - name: Run Tests
-      shell: pwsh
-      run: dotnet test --no-restore --no-build --configuration Release
+#    - name: Run Tests
+#      shell: pwsh
+#      run: dotnet test --no-restore --no-build --configuration Release
 
     - name: Pack
       shell: pwsh

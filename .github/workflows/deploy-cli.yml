@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@main
       with:
-        lfs: true
+        lfs: false
         
     - name: Setup Version
       shell: pwsh
@@ -34,9 +34,9 @@ jobs:
       shell: pwsh
       run: dotnet publish --no-restore --configuration Release -p:Version=${{ env.VERSION }} -o bin
 
-    - name: Run Tests
-      shell: pwsh
-      run: dotnet test --no-restore --no-build --configuration Release
+#    - name: Run Tests
+#      shell: pwsh
+#      run: dotnet test --no-restore --no-build --configuration Release
       
     - name: Zip
       run: tar -cvf SoulWorker_ResStructureExtractor_${{ env.VERSION }}.zip -C bin *

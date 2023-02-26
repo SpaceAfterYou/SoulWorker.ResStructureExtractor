@@ -2,6 +2,8 @@
 using SpaceAfterYou.SoulWorker.ResStructureExtractor;
 using System.Text.Json;
 
+args = new string[] { "-path", "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Soulworker_KR\\SoulWorker_dump.exe", "-file", "output.json" };
+
 var config = new Config(args);
 var results = Extract.FromUnpacked(config.Path).ToDictionary(k => k.Key, v => v.Value.Select(v => v.Name).ToArray());
 
